@@ -19,7 +19,8 @@ Copy
 Edit
 pip install pandas numpy matplotlib scikit-learn xgboost
 3. Dataset Preparation
-Place the dataset updated_logic_depth_dataset.csv in the project directory.
+Place the dataset DATASET.csv
+in the project directory.
 
 4. Running the Code
 Execute the script with:
