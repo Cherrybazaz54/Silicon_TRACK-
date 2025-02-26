@@ -30,3 +30,24 @@ Copy
 Edit
 python trained_modelcode.py
 Approach Used to Develop the Algorithm
+
+
+#The complexity 
+
+ Data Generation & Feature Extraction (O(n)) 
+1. Extracted Fan-in, Fan-out, Gate Count, Gate Types from Vivado. 
+2. Each circuit is processed independently, leading to O(n) complexity. 
+Model Training (O(n⋅ d⋅m)) 
+1. Random Forest builds multiple trees, making training O(m⋅ n⋅ log n). 
+2. XGBoost applies boosting, resulting in O(n⋅ d⋅m) complexity. 
+Prediction Complexity 
+1. Random Forest Prediction (O(m ⋅ log n)) – Each sample passes through multiple trees. 
+2. XGBoost Prediction (O(log n)) – More efficient due to optimized traversal. 
+Overall Complexity 
+1. Feature Extraction: O(n) 
+2. Training: O(n⋅ d⋅m) 
+3. Prediction: O(logn) 
+Conclusion 
+1. High accuracy with reasonable training complexity. 
+2. Fast logic depth prediction for pre-synthesis timing analysis. 
+3. Scalable for large circuit datasets, improving timing violation detection.
